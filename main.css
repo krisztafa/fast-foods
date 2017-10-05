@@ -1,0 +1,311 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: url('https://st.depositphotos.com/3470617/4869/v/950/depositphotos_48698491-stock-illustration-big-food-mix-pattern.jpg') repeat center;
+  transition: background-color .5s;
+  color: #000;
+}
+
+.soup, .main-course, .burgers, .eis-cream{
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 2rem;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  text-shadow: 1px 1px 0 #f1c40f;
+}
+
+a:hover{
+  color: #380000;
+  text-shadow: none;
+}
+
+h1{
+  font-size: 5rem;
+  text-align: center;
+  margin: 1rem;
+  letter-spacing: .2rem;
+}
+
+h2{
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: .2rem;
+  text-shadow: 3px 3px 0 #f1c40f;
+}
+
+li{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0 #ffffe0;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+}
+
+address{
+    font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0 #ffffe0;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  margin-bottom: 1.5rem;
+}
+
+p{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 0 #ffffe0;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  text-align: justify;
+}
+
+/*˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛HEADER˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛*/
+
+.cover{
+  height: 100vh;
+  width: 100vh;
+  background: url('https://edge.alluremedia.com.au/m/l/2016/06/Burgers.jpg') no-repeat 70% center/cover;
+  display: table;
+  text-align: center;
+}
+
+.tagline{
+  font-size: 7rem;
+}
+
+#mean{
+  margin-top: 13rem;
+}
+
+.wrap{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text{  
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  text-shadow: 3px 3px 0 #f1c40f;
+}
+
+/*˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝
+˝˝˝˝˝˝˝˝˝˝˝˝˝LAPTOP-PC˝˝˝˝˝˝˝˝˝˝˝˝˝
+˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝
+˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝˝*/
+
+@media (min-width: 768px){
+  
+  .cover{
+    background: url('https://edge.alluremedia.com.au/m/l/2016/06/Burgers.jpg') no-repeat center/cover;
+    width: 100vw;
+  }
+  
+  .tagline{
+    text-transform: uppercase;
+  }
+  
+}
+
+/*˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛MAIN˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛˛*/
+
+.soup, .main-course, .burgers, .eis-cream{
+  background-color: rgba(224,195,138, 0.5); 
+  border: 1px solid #e0c38a;
+  border-radius: 5px;
+}
+
+.galery{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #f1c40f;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  text-align: center;
+}
+
+.galery:hover{
+  text-shadow: none;
+}
+
+.galery::after{
+  display: block;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 15rem;
+  margin: 1.5rem auto;
+}
+
+.menu{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #ffffe0;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.menu::after{
+  display: block;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 15rem;
+  margin: 1.5rem auto;
+}
+
+.menu1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #ffffe0;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.open{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.5rem; 
+  line-height: 2rem;
+  letter-spacing: .25rem;
+}
+
+.open p{
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.open a{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0 #f1c40f;
+  line-height: 2rem;
+  letter-spacing: .25rem;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.open a:hover{
+  text-shadow: none;
+}
+
+ul{
+  margin: 1.5rem auto;
+  text-align: justify;
+  display: inline-block;
+}
+
+.open::after{
+  display: block;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 15rem;
+  margin: 1.5rem auto;
+}
+
+address p{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+address::after{
+  display: block;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 15rem;
+  margin: .5rem auto;
+}
+
+#shops::after{
+  display: block;
+  content: "";
+  background-color: #000;
+  height: 2px;
+  width: 15rem;
+  margin: .5rem auto;
+}
+
+.zing h2{
+  padding-top: 1.5rem;
+}
+
+
+/* --------------------The side navigation menu -----------------------*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #333; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #8a8a8a;
+    text-shadow: none;
+    display: block;
+    transition: 0.3s
+} 
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #e3e3e3;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.nav {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#last{
+  font-family: 'Anton', sans-serif;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  letter-spacing: .2rem;
+  text-shadow: 3px 3px 0 #f1c40f;
+  float:right;
+}
